@@ -13,7 +13,7 @@ pub struct PendingClaim {
 
     pub is_efi : bool,
 	/// time when claim request is made
-	pub start_block_number: u32,
+	pub start_block_number: u64,
 }
 
 /// A claim from of ENJ2 from Ethereum
@@ -39,6 +39,9 @@ pub struct ClaimData {
 	/// The amount and balance being claimed
 	pub amount: u32,
 	/// time when claim request is made
-	pub start_block_number: u32,
+	pub start_block_number: u64,
+	
+	pub is_early_bird: bool
 }
+
 
