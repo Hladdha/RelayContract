@@ -1,0 +1,18 @@
+[package]
+name = "relaychain"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+cosmwasm-std = "1.1.0"
+serde = { version = "1.0.103", default-features = false, features = ["derive"] }
+cw-storage-plus = "1.0.1"
+cw-utils = "1.0.1"
+thiserror = "1.0.31"
+primitive-types = "0.12.1"
+sha3 = "0.10.8"
+cosmwasm-schema = "1.1.4"
